@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги и цены - 3D Дженералист</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Самостоятельная работа по созданию сайта визитки</h1>
+    <p>Добавить CSS и JS формы или анимацию</p>
+    <p>не < 5 страниц</p>
+
+    <header>
+        <div class="me">Я 3D дженералист</div>
+        <div class="buttons">
+            <a href="index.html" class="b1">Главная</a>
+            <a href="inf.html" class="b2">Информация</a>
+            <a href="jobs.html" class="b3">Работы</a>
+            <a href="catalog.html" class="b4 active">Каталог</a>
+            <a href="contact.html" class="b5">Контакты</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="catalog-header">
+            <h2>Услуги и цены</h2>
+            <p>Выберите подходящий пакет услуг или закажите индивидуальный проект</p>
+        </div>
+
+        <div class="pricing-plans">
+            <div class="pricing-card">
+                <div class="plan-header">
+                    <h3>Базовый</h3>
+                    <div class="price">от 5 000 ₽</div>
+                </div>
+                <ul class="plan-features">
+                    <li>Простая 3D модель</li>
+                    <li>Базовые текстуры</li>
+                    <li>1-2 ракурса рендера</li>
+                    <li>Срок: 3-5 дней</li>
+                    <li>2 правки</li>
+                </ul>
+                <button class="plan-button" onclick="location.href='contact.html'">Заказать</button>
+            </div>
+
+            <div class="pricing-card featured">
+                <div class="plan-header">
+                    <h3>Стандартный</h3>
+                    <div class="price">от 15 000 ₽</div>
+                </div>
+                <ul class="plan-features">
+                    <li>Сложная 3D модель</li>
+                    <li>Детализированные текстуры</li>
+                    <li>До 5 ракурсов рендера</li>
+                    <li>Срок: 7-10 дней</li>
+                    <li>5 правок</li>
+                    <li>PBR материалы</li>
+                </ul>
+                <button class="plan-button featured-btn" onclick="location.href='contact.html'">Заказать</button>
+            </div>
+
+            <div class="pricing-card">
+                <div class="plan-header">
+                    <h3>Премиум</h3>
+                    <div class="price">от 30 000 ₽</div>
+                </div>
+                <ul class="plan-features">
+                    <li>Комплексная работа</li>
+                    <li>Фотореалистичные текстуры</li>
+                    <li>Неограниченное число ракурсов</li>
+                    <li>Срок: 14-21 день</li>
+                    <li>Неограниченные правки</li>
+                    <li>Анимация/риггинг</li>
+                    <li>Приоритетная поддержка</li>
+                </ul>
+                <button class="plan-button" onclick="location.href='contact.html'">Заказать</button>
+            </div>
+        </div>
+
+        <div class="services-detailed">
+            <h2>Подробное описание услуг</h2>
+
+            <div class="service-item">
+                <h3>3D Моделирование</h3>
+                <div class="service-content">
+                    <div class="service-description">
+                        <p>Создание 3D моделей любой сложности:</p>
+                        <ul>
+                            <li>Архитектурные объекты</li>
+                            <li>Продуктовый дизайн</li>
+                            <li>Персонажи и существа</li>
+                            <li>Техника и механизмы</li>
+                            <li>Окружение и локации</li>
+                        </ul>
+                    </div>
+                    <div class="service-price">
+                        <span>от 3 000 ₽</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>Текстурирование</h3>
+                <div class="service-content">
+                    <div class="service-description">
+                        <p>Создание качественных текстур и материалов:</p>
+                        <ul>
+                            <li>PBR материалы</li>
+                            <li>UV развертка</li>
+                            <li>Hand-painted текстуры</li>
+                            <li>Procedural материалы</li>
+                        </ul>
+                    </div>
+                    <div class="service-price">
+                        <span>от 2 000 ₽</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>Анимация</h3>
+                <div class="service-content">
+                    <div class="service-description">
+                        <p>Создание анимации и риггинг:</p>
+                        <ul>
+                            <li>Риггинг персонажей</li>
+                            <li>Анимация движения</li>
+                            <li>Facial animation</li>
+                            <li>Моушн-дизайн</li>
+                        </ul>
+                    </div>
+                    <div class="service-price">
+                        <span>от 8 000 ₽</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>Визуализация</h3>
+                <div class="service-content">
+                    <div class="service-description">
+                        <p>Фотореалистичный рендеринг:</p>
+                        <ul>
+                            <li>Архитектурная визуализация</li>
+                            <li>Продуктовый рендер</li>
+                            <li>Интерьерная визуализация</li>
+                            <li>360° панорамы</li>
+                        </ul>
+                    </div>
+                    <div class="service-price">
+                        <span>от 1 500 ₽ за ракурс</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <h2>Часто задаваемые вопросы</h2>
+            <div class="faq-item">
+                <div class="faq-question">Как происходит оплата?</div>
+                <div class="faq-answer">50% предоплата, 50% после сдачи работы. Принимаю перевод на карту, PayPal или другие способы.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Можно ли внести правки после сдачи?</div>
+                <div class="faq-answer">Да, в течение 14 дней после сдачи работы бесплатно вношу незначительные правки.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Какие форматы файлов вы предоставляете?</div>
+                <div class="faq-answer">FBX, OBJ, BLEND, MAX, и другие популярные форматы по требованию.</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 3D Дженералист. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#">ArtStation</a>
+                <a href="#">Behance</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

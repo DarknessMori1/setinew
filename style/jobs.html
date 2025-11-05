@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - 3D Дженералист</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Самостоятельная работа по созданию сайта визитки</h1>
+    <p>Добавить CSS и JS формы или анимацию</p>
+    <p>не < 5 страниц</p>
+
+    <header>
+        <div class="me">Я 3D дженералист</div>
+        <div class="buttons">
+            <a href="index.html" class="b1">Главная</a>
+            <a href="inf.html" class="b2">Информация</a>
+            <a href="jobs.html" class="b3 active">Работы</a>
+            <a href="catalog.html" class="b4">Каталог</a>
+            <a href="contact.html" class="b5">Контакты</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="portfolio-header">
+            <h2>Мое портфолио</h2>
+            <p>Здесь собраны мои лучшие работы за последние годы</p>
+        </div>
+
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">Все работы</button>
+            <button class="filter-btn" data-filter="modeling">3D Модели</button>
+            <button class="filter-btn" data-filter="animation">Анимация</button>
+            <button class="filter-btn" data-filter="visualization">Визуализация</button>
+            <button class="filter-btn" data-filter="characters">Персонажи</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="modeling visualization">
+                <div class="portfolio-image">
+                    <img src="images/cat3.jpg" alt="Архитектурная визуализация современного дома">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Современный дом</h3>
+                    <p>Полная 3D визуализация архитектурного проекта с фотореалистичными материалами и освещением</p>
+                    <span class="portfolio-category">Визуализация</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="characters modeling">
+                <div class="portfolio-image">
+                    <img src="images/cat4.jpg" alt="Фэнтези персонаж воин">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Фэнтези воин</h3>
+                    <p>Создание игрового персонажа с детализированными текстурами и риггингом для анимации</p>
+                    <span class="portfolio-category">Персонажи</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="animation visualization">
+                <div class="portfolio-image">
+                    <img src="images/cat5.jpg" alt="3D анимация продукта">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Продуктовая анимация</h3>
+                    <p>Анимация для рекламного ролика с плавными переходами и динамическим освещением</p>
+                    <span class="portfolio-category">Анимация</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="modeling visualization">
+                <div class="portfolio-image">
+                    <img src="images/cat6.jpg" alt="Интерьерная визуализация">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Дизайн интерьера</h3>
+                    <p>Фотореалистичная визуализация жилого пространства с акцентом на материалы и текстуры</p>
+                    <span class="portfolio-category">Визуализация</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="characters modeling">
+                <div class="portfolio-image">
+                    <img src="images/cat7.jpg" alt="3D модель персонажа">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Стилизованный персонаж</h3>
+                    <p>Создание стилизованного персонажа для мобильной игры с оптимизированной топологией</p>
+                    <span class="portfolio-category">Персонажи</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="modeling">
+                <div class="portfolio-image">
+                    <img src="images/avatar.jpg" alt="3D модель техники">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Техническая визуализация</h3>
+                    <p>Детализированное 3D моделирование сложных механизмов для технической документации</p>
+                    <span class="portfolio-category">3D Модели</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <h2>Отзывы клиентов</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"Отличная работа! Все было сделано вовремя и превысило наши ожидания по качеству. Особенно впечатлила детализация текстур."</p>
+                    <div class="client-info">
+                        <strong>Алексей, GameDev студия</strong>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"Профессионал своего дела. Понимает с полуслова и предлагает креативные решения. Рекомендую для сложных проектов!"</p>
+                    <div class="client-info">
+                        <strong>Мария, Архитектурное бюро</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 3D Дженералист. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#">ArtStation</a>
+                <a href="#">Behance</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

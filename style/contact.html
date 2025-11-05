@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - 3D Дженералист</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Самостоятельная работа по созданию сайта визитки</h1>
+    <p>Добавить CSS и JS формы или анимацию</p>
+    <p>не < 5 страниц</p>
+
+    <header>
+        <div class="me">Я 3D дженералист</div>
+        <div class="buttons">
+            <a href="index.html" class="b1">Главная</a>
+            <a href="inf.html" class="b2">Информация</a>
+            <a href="jobs.html" class="b3">Работы</a>
+            <a href="catalog.html" class="b4">Каталог</a>
+            <a href="contact.html" class="b5 active">Контакты</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact-header">
+            <h2>Свяжитесь со мной</h2>
+            <p>Готов обсудить ваш проект и предложить оптимальное решение</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Контактная информация</h3>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>3d.generalist@example.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-details">
+                        <h4>Телефон</h4>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <div class="contact-details">
+                        <h4>Соцсети</h4>
+                        <div class="social-contact">
+                            <a href="#" class="social-link">ArtStation</a>
+                            <a href="#" class="social-link">Behance</a>
+                            <a href="#" class="social-link">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🕒</div>
+                    <div class="contact-details">
+                        <h4>Время работы</h4>
+                        <p>Пн-Пт: 10:00 - 19:00</p>
+                        <p>Сб: 11:00 - 16:00</p>
+                        <p>Вс: выходной</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h3>Форма обратной связи</h3>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Тип услуги</label>
+                        <select id="service" name="service">
+                            <option value="">Выберите услугу</option>
+                            <option value="modeling">3D Моделирование</option>
+                            <option value="texturing">Текстурирование</option>
+                            <option value="animation">Анимация</option>
+                            <option value="visualization">Визуализация</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Бюджет</label>
+                        <select id="budget" name="budget">
+                            <option value="">Выберите бюджет</option>
+                            <option value="5-15">5 000 - 15 000 ₽</option>
+                            <option value="15-30">15 000 - 30 000 ₽</option>
+                            <option value="30-50">30 000 - 50 000 ₽</option>
+                            <option value="50+">Более 50 000 ₽</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Опишите ваш проект..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="file-upload">
+                            <input type="file" id="attachment" name="attachment">
+                            <span>Прикрепить файлы (опционально)</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-button">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="map-section">
+            <h2>Где я нахожусь</h2>
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <p>📍 Работаю удаленно по всему миру</p>
+                    <p>Основной часовой пояс: Москва (UTC+3)</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 3D Дженералист. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#">ArtStation</a>
+                <a href="#">Behance</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
